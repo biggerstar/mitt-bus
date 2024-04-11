@@ -1,0 +1,39 @@
+{
+  "name": "@biggerstar/mitt-bus",
+  "version": "0.0.10",
+  "description": "mitt 的可继承 class 形式",
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "repository": {
+    "url": "https://github.com/biggerstar/mitt-bus"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "main": "./dist/mitt-bus.js",
+  "exports": {
+    ".": {
+      "import": "./dist/mitt-bus.js",
+      "default": "./dist/mitt-bus.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "mitt": "^3.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.8.1"
+  }
+}
